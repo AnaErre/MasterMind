@@ -1,25 +1,20 @@
 secret_numbers = [8, 2, 3, 5, 6]
 candidate_numbers = [8, 2, 3, 5, 6]
 
-
 def imprimir (secret_numbers):
     for numero in secret_numbers:
-       print(numero)
-    
+       print(numero) 
 
 def imprimir_pares (secret_numbers):
     for numero in secret_numbers:
         if numero % 2 == 0:
-            print(numero)
-       
-
+            print(numero)       
 
 def contador (secret_numbers):
     contador = 0
     for numero in secret_numbers:
        contador = contador + 1
        print(contador)
-
 
 def contador_pares (secret_numbers):
     contador = 0
@@ -44,8 +39,7 @@ def comparador_exacto (secret_numbers, candidate_numbers):
     for indice, secret_numbers[indice] in enumerate(secret_numbers):
         if secret_numbers[indice]  == candidate_numbers[indice]:
             contador = contador + 1
-    return(contador)
-        
+    return(contador)      
 
 def comparador_presencia (secret_numbers, candidate_numbers):
     contador = 0
